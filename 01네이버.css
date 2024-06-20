@@ -1,0 +1,195 @@
+@charset "UTF-8";
+/* montserrat raleway roboto 폰트*/
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Hind+Siliguri:wght@300;400;500;600;700&family=Hind:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* Fontawesome 4.7 */
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+/* Noto Sans KR 폰트 */
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap");
+/* 모든폰트 */
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Hind+Siliguri:wght@300;400;500;600;700&family=Hind:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Monoton&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* XEION CDN */
+@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+/* Bootstrap Icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+/* Lato 폰트 */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+/* Playfair 폰트 */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+/* Open Sans 폰트*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+/* 눈누 폰트 지마켓 */
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Default CSS */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #F5F6F7;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  margin: 0;
+}
+
+.container {
+  padding-top: 100px;
+}
+.container .member {
+  width: 420px;
+}
+.container .member .logo {
+  padding: 40px 0;
+  padding-top: 50px;
+  text-align: center;
+}
+.container .member .field {
+  margin-bottom: 5px;
+}
+.container .member .field b {
+  font-size: 13px;
+  display: block;
+  padding-bottom: 5px;
+}
+.container .member .field .placeholder-text {
+  position: relative;
+}
+.container .member .field .placeholder-text::before {
+  content: attr(data-alt);
+  position: absolute;
+  top: 26%;
+  right: 12px;
+  font-size: 14px;
+  color: #979797;
+}
+.container .member .field input:not(input[type=radio]),
+.container .member .field select {
+  width: 100%;
+  outline: none;
+  border: 1px solid #e4e3e3;
+  padding: 15px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.container .member .field input:not(input[type=radio]):focus,
+.container .member .field select:focus {
+  border: 1px solid #2DB400;
+}
+.container .member .field .userpw {
+  background: #fff url(./image/icon-01.png) no-repeat center right 10px;
+  background-size: 20px;
+}
+.container .member .field .userpw-confirm {
+  background: #fff url(./image/icon-02.png) no-repeat center right 10px;
+  background-size: 20px;
+}
+.container .member .field.birth > div {
+  display: flex;
+  gap: 10px;
+}
+.container .member .field.gender div {
+  cursor: pointer;
+  padding: 15px 0;
+  background-color: #fff;
+  font-size: 14px;
+}
+.container .member .field.gender div:focus {
+  border: 1px solid #2DB400;
+}
+.container .member .field.gender div label {
+  cursor: pointer;
+}
+.container .member .field.gender div label em {
+  display: inline-block;
+  border-radius: 50%;
+  vertical-align: middle;
+  transform: translateY(-2.5px);
+  margin-right: 5px;
+  width: 18px;
+  height: 18px;
+  background: url(./image/icon-radio.png) left;
+}
+.container .member .field.gender div label input[name=gender] {
+  display: none;
+}
+.container .member .field.gender div label input[name=gender]:checked + em {
+  background-position: right;
+}
+.container .member .field.tel-number > div {
+  display: flex;
+  gap: 10px;
+}
+.container .member .field.tel-number > div input[type=tel] {
+  flex: 2;
+}
+.container .member .field.tel-number > div input[type=button] {
+  flex: 1;
+  background-color: #2DB400;
+  color: #fff;
+}
+.container .member .field.tel-number input[type=number] {
+  text-align: left;
+  background-color: #fff;
+}
+.container .member .field.tel-number input[type=number]:focus::placeholder {
+  opacity: 0;
+}
+.container .member .field.tel-number input[type=number]::placeholder {
+  transition: 0.35s;
+}
+.container .member input[type=submit] {
+  width: 100%;
+  outline: none;
+  border: 1px solid #e4e3e3;
+  padding: 15px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  color: #fff;
+  background-color: #2DB400;
+}
+.container .member .member-footer {
+  text-align: center;
+}
+.container .member .member-footer > div a {
+  font-size: 12px;
+}
+.container .member .member-footer > div a:hover {
+  color: #2DB400;
+  text-decoration: underline;
+}
+.container .member .member-footer > div a::after {
+  content: "|";
+  font-size: 10px;
+  margin-right: 5px;
+  padding-left: 7px;
+  display: inline-block;
+  transform: translateY(-2px);
+}
+.container .member .member-footer > div a:last-child::after {
+  display: none;
+}
+.container .member .member-footer span {
+  font-size: 13px;
+}
